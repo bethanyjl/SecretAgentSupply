@@ -1,0 +1,266 @@
+html {
+  font-size: 18px;
+  color: white;
+  font-family: Helvetica;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+header .container img {
+  height: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+section.banner {
+  background-image: url("../images/moto.jpeg");
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.banner div.title {
+  background-color: black;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+
+section.banner div.title h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+section.banner div.title h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+
+nav.desktop {
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+
+nav.desktop ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+div.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.product {
+  border: 4px solid black;
+  width: 30%;
+}
+
+.description {
+  background-color: black;
+  padding: 0.5rem 0;
+  display: block;
+  text-align: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+}
+
+.img img {
+  max-width: 8rem;
+  margin: 2rem 0;
+}
+
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.information span {
+  display: block;
+  color: black;
+}
+
+.information .location {
+  width: 35%;
+}
+
+.information .location .location-title {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.information .hours {
+  width: 35%;
+}
+.information .hours .hours-title {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+
+footer {
+  background-color: black;
+
+}
+
+footer .container {
+  height: 5rem;
+  margin-top: 4rem;
+  padding: 5rem 0rem;
+  display: flex;
+  align-items: center;
+}
+
+.small-screens {
+  display: none;
+}
+
+@media only screen and (max-width:1024px) {
+
+  .desktop {
+    display: none;
+  }
+  .small-screens {
+    display: flex;
+  }
+
+  nav.small-screens {
+    background-color: firebrick;
+    padding: 0.75rem 0;
+  }
+
+  nav.small-screens ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .glasses {
+    display: none;
+}
+  .product {
+    width: 47%;
+}
+
+}
+
+@media only screen and (max-width: 512px) {
+
+  section.banner {
+    height: 15rem;
+  }
+
+  section.banner div.title {
+    width: 100%;
+    position: relative;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  section.banner div.title h2 {
+    font-weight: bold;
+    font-size: 0.77rem;
+    padding-bottom: 0.25rem;
+  }
+
+  section.banner div.title h1 {
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 0.25rem;
+  }
+
+
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .product {
+    width 90%;
+  }
+  .glasses {
+    display: none;
+  }
+  .watch {
+    display: none;
+  }
+
+  .information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .information span {
+    display: block;
+    color: black;
+  }
+
+  .information .location {
+    width: 90%;
+  }
+
+  .information .location .location-title {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0px;
+  }
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
+  .information .hours {
+    width: 90%;
+  }
+  .information .hours .hours-title {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0px;
+  }
+  footer .container {
+    height: 5rem;
+    margin-top: 4rem;
+    padding: 5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
